@@ -1,7 +1,12 @@
 package com.example.myshopapp.repository;
 
-import com.example.myshopapp.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<User, Long> {
+import com.example.myshopapp.model.User;
+
+import java.util.Optional;
+
+
+public interface UserRepository extends JpaRepository<User, String> {
+    Boolean existsByPhoneNumber(String phoneNumber);
 }

@@ -1,13 +1,15 @@
-package com.example.myshopapp.response;
+package com.example.myshopapp.dto.response;
+
+import java.time.LocalDateTime;
+
+import jakarta.persistence.MappedSuperclass;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.MappedSuperclass;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.time.LocalDateTime;
 
 @Getter
 @Setter

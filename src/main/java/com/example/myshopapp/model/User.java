@@ -33,8 +33,8 @@ import lombok.Setter;
 @Table(name = "users")
 public class User extends BaseEntity implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String id;
 
     @Column(name = "fullname", length = 100)
     private String fullName;
