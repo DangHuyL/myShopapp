@@ -1,10 +1,11 @@
 package com.example.myshopapp.dto.response;
 
+import java.util.Date;
+
 import com.example.myshopapp.model.Role;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
 
-import java.util.Date;
+import lombok.*;
 
 @Data
 @Getter
@@ -12,7 +13,7 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserResponse{
+public class UserResponse {
     @JsonProperty("id")
     private Long id;
 

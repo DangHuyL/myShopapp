@@ -46,5 +46,5 @@ public class UserRequest {
 
     @NotNull(message = "Role ID is required")
     @JsonProperty("role_id")
-    private String roleId;
+    private Long roleId;
 }
